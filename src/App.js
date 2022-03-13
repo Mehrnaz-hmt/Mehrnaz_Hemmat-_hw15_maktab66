@@ -1,23 +1,25 @@
-import React, { Component } from "react";
-import TodoInput from "./components/TodoInput";
-import TodoList from "./components/TodoList";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import { v4 as uuid } from "uuid";
+import React, { Component } from 'react';
+import TodoInput from './components/TodoInput';
+import TodoList from './components/TodoList';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import { v4 as uuid } from 'uuid';
 
 class App extends Component {
   state = {
     items: [],
-    item: "",
+    item: '',
     editItem: false,
   };
   handleChange = (item) => {
     this.setState({
-      item,
+      item:item,
     });
   };
   handleSubmit = () => {
-    this.setState(prevState=>({items:[...prevState.items,{title: prevState.item, id:uuid()}]}))
+    this.setState((prevState) => ({
+      items: [...prevState.items, { title: prevState.item, id: uuid() }],
+    }));
   };
 
   clearList = () => {
@@ -29,9 +31,6 @@ class App extends Component {
     const filteredItems = this.state.items.filter((item) => item.id !== id);
     this.setState({
       items: filteredItems,
-      // item:selectedItem.title,
-      // editItem: true,
-      // id:id,
     });
   };
   handleEdit = (id) => {
