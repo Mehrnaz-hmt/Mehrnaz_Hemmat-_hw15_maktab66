@@ -28,3 +28,4 @@ https://www.freecodecamp.org/news/functional-components-vs-class-components-in-r
 
 https://fa.reactjs.org/docs/hooks-state.html
 
+https://docs.google.com/document/d/1YsWqhT-8rwOhj6Jtc9NG3XMR4iQSVwRPzYX1xoXg0kw/edit?usp=sharing ===>لینک گوگل داکس برای خوانایی بهتر :)
